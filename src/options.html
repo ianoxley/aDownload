@@ -1,0 +1,25 @@
+<!DOCTYPE html> 
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Options</title>
+  </head>
+
+  <body>
+    <h1>Options</h1>
+
+    <form action="" method="post">
+      <fieldset id="name">
+        <div>
+          <label for="exts">File extensions to download:</label>
+          <input id="exts" pattern="\.pdf(\s\.[a-zA-Z0-9]{2,3})*" required> 
+        </div>
+        <div>
+          <input type="submit" value="Save">
+        </div>
+      </fieldset>
+    </form>
+    <script src="config.js"></script>
+    <script src="options.js"></script>
+  </body>
+</html>
