@@ -1,0 +1,63 @@
+/* options.css
+ * ------------*/
+* {
+  margin:0;
+  padding:0;
+}
+body {
+  background:#fff;
+  color:#000;
+  font:62.5%/140% Helvetica, Arial, sans-serif;
+  padding:10px;
+}
+html > body {
+  font-size:14px;
+}
+h1 {
+  font-size:40px;
+  font-weight:normal;
+  line-height:1;
+  margin:0 0 10px;
+}
+form {
+  margin:10px 0;
+}
+fieldset {
+  border:0;
+}
+fieldset > div {
+  margin:10px 0;
+}
+label {
+  display:block;
+  font-weight:bold;
+  margin-bottom:2px;
+}
+label > .further {
+  font-weight:normal;
+}
+input#exts {
+  border:1px solid #ccc;
+  border-radius:5px;
+  font-size:1em;
+  padding:5px;
+  width:50%;
+}
+input#exts:focus {
+  background:#FFFBCC;
+}
+input[type="submit"] {
+  width:auto;
+}
+@media only screen
+and (min-width : 1000px) {
+  input#exts {
+    width:50%;
+  }
+}
+@media only screen
+and (max-width: 1000px) {
+  input#exts {
+    width:75%;
+  }
+}

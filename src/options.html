@@ -3,15 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>Options</title>
+    <link rel="stylesheet" href="options.css" type="text/css" media="screen">
   </head>
 
   <body>
     <h1>Options</h1>
 
+    <!-- <p>New version of Chrome support the download attribute on <code>&lt;a&gt;</code> tags.
+      Until websites catch up and start adding download attributes to their markup, aDownload lets
+      you tell Chrome which files you want it to apply the download attribute to <b>now</b>.</p> -->
+    <p>Just enter the file extensions you want to be downloadable in the form below.</p>
+    <p><abbr title="for example">e.g.</abbr> If you want Chrome to download all <abbr title="Portable Document Format">PDF</abbr>
+      files instead of rendering them in the browser, just make sure <em>.pdf</em> is entered below.</p>
     <form action="" method="post">
-      <fieldset id="name">
+      <fieldset>
         <div>
-          <label for="exts">File extensions to download:</label>
+          <label for="exts">File extensions to download <span class="further">(separate multiple file extensions with a space)</span>:</label>
           <input id="exts" pattern="\.pdf(\s\.[a-zA-Z0-9]{2,3})*" required> 
         </div>
         <div>
